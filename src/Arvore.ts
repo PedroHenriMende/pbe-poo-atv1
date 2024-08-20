@@ -1,11 +1,11 @@
 export class Arvore{
     //ATRIBUTOS
     private folhagem: string;
-    private tamanho: number ;
+    private tamanho: string ;
     private cor: string;
 
     //CONSTRUCTOR
-    public constructor (_folhagem: string, _tamanho: number, _cor: string){
+    public constructor (_folhagem: string, _tamanho: string, _cor: string){
         this.folhagem = _folhagem;
         this.tamanho = _tamanho;
         this.cor = _cor;
@@ -24,10 +24,10 @@ export class Arvore{
         public setCor(_cor: string): void{
             this.cor = _cor;
         }
-        public getTamanho(): number{
+        public getTamanho(): string{
             return this.tamanho;
         }
-        public setTamanho(_tamanho: number): void{
+        public setTamanho(_tamanho: string): void{
             this.tamanho = _tamanho;
         }
         //MÉTODO DIAGRAMA
